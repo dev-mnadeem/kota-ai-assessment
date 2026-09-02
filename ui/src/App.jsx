@@ -1,16 +1,25 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import './App.css'
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000'
 
 function App() {
+  const [dataset, setDataset] = useState(null)
+  useEffect(() => {
+    const controller = new AbortController()
+    fetch(`${API_BASE}/ready`, {signal: controller.signal})
+      .then(response => response.json())
+      .then(setDataset)
+      .catch(() => { if (!controller.signal.aborted) setDataset({ready: false}) })
+    return () => controller.abort()
+  }, [])
   const [question, setQuestion] = useState('')
   const [answer, setAnswer] = useState('')
   const [sources, setSources] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
-  const canSubmit = useMemo(() => question.trim().length >= 5 && !loading, [question, loading])
+  const canSubmit = useMemo(() => question.trim().length >= 5 && !loading && Boolean(dataset?.ready && dataset?.agent_configured), [question, loading, dataset])
 
   const askAgent = async (event) => {
     event.preventDefault()
@@ -45,6 +54,23 @@ function App() {
 
   return (
     <main className="page">
+      <header className="intro">
+        <p className="eyebrow">ONS · WORKPLACE PENSIONS</p>
+        <h1>Questions, grounded in the data.</h1>
+        <p>Explore workplace pension membership and contributions. Answers cite the tables they use.</p>
+      </header>
+      <section className="panel dataset" aria-label="Dataset coverage">
+        <div><span className="eyebrow">AVAILABLE DATA</span><h2>{dataset?.ready ? (dataset.mode === 'fixture' ? 'Synthetic test fixture' : 'Verified ONS snapshot') : 'Dataset not ready'}</h2></div>
+        {dataset?.ready ? <>
+          <div className="coverage-grid">
+            <div><strong>{dataset.rows.toLocaleString()}</strong><span>observations</span></div>
+            <div><strong>{dataset.tables.length}</strong><span>published tables</span></div>
+            <div><strong>{dataset.years.at(-1)}</strong><span>latest available year</span></div>
+          </div>
+          <p className="coverage-note">{dataset.mode === 'fixture' ? dataset.notice : 'All employee jobs. Published coverage: 2009–2021 and 2024; availability varies by table. Contribution methodologies change across editions.'}</p>
+        </> : <p>Build a dataset snapshot before asking a question.</p>}
+        {dataset?.ready && !dataset.agent_configured ? <p className="service-note" role="status">Data is ready. The question service needs a configured model provider before it can answer.</p> : null}
+      </section>
       <section className="panel">
         <form onSubmit={askAgent}>
           <label htmlFor="question">Ask a pension question</label>

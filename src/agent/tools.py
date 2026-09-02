@@ -4,6 +4,8 @@ import dataclasses
 import os
 import re
 import sqlite3
+from contextlib import contextmanager
+from collections.abc import Iterator
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Literal
@@ -55,10 +57,18 @@ class SQLiteTools:
     def __init__(self, db_path: str | Path) -> None:
         self.db_path = str(db_path)
 
-    def _connect(self) -> sqlite3.Connection:
-        conn = sqlite3.connect(self.db_path)
-        conn.row_factory = sqlite3.Row
-        return conn
+    @contextmanager
+    def _connect(self) -> Iterator[sqlite3.Connection]:
+        path = Path(self.db_path).resolve()
+        if not path.is_file():
+            raise FileNotFoundError("Dataset is missing; build it before querying the agent.")
+        conn = sqlite3.connect(path.as_uri() + "?mode=ro", uri=True)
+        try:
+            conn.row_factory = sqlite3.Row
+            conn.execute("PRAGMA query_only = ON")
+            yield conn
+        finally:
+            conn.close()
 
     @staticmethod
     def _normalize_key(value: str) -> str:

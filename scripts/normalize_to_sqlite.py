@@ -4,15 +4,27 @@ import csv
 import sqlite3
 from pathlib import Path
 
-from ashe_data_utils import (
-    classify_file,
-    infer_measure_type,
-    infer_primary_group_type,
-    normalize_text,
-    parse_numeric,
-    read_csv_rows,
-    suppression_flag,
-)
+if __package__:
+    from .ashe_data_utils import (
+        classify_file,
+        infer_measure_type,
+        infer_primary_group_type,
+        normalize_text,
+        parse_numeric,
+        read_csv_rows,
+        suppression_flag,
+    )
+else:
+    from ashe_data_utils import (
+        classify_file,
+        infer_measure_type,
+        infer_primary_group_type,
+        normalize_text,
+        parse_numeric,
+        read_csv_rows,
+        suppression_flag,
+    )
+
 
 
 def ensure_schema(conn: sqlite3.Connection) -> None:

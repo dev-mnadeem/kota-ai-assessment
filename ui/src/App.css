@@ -159,3 +159,16 @@ button:disabled {
     border-radius: 14px;
   }
 }
+
+.intro { margin: 1rem 0 2rem; max-width: 48rem; }
+.intro h1 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.08; letter-spacing: -0.04em; margin: .8rem 0 1rem; }
+.intro p { color: #52616e; line-height: 1.7; }
+.eyebrow { font-size: .72rem; font-weight: 700; letter-spacing: .16em; color: #17665c; }
+.dataset h2 { margin: .5rem 0 1.5rem; }
+.coverage-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.coverage-grid div { display: flex; flex-direction: column; gap: .35rem; }
+.coverage-grid strong { font-size: 1.9rem; color: #174a43; }
+.coverage-grid span, .coverage-note { color: #52616e; font-size: .85rem; }
+.coverage-note { line-height: 1.6; margin-top: 1.5rem; }
+.service-note { border-left: 3px solid #b89544; background: #fcf8ee; padding: .9rem 1rem; font-size: .9rem; line-height: 1.5; }
+@media (max-width: 520px) { .coverage-grid { grid-template-columns: 1fr; } .coverage-grid div { flex-direction: row; align-items: baseline; gap: .7rem; } }

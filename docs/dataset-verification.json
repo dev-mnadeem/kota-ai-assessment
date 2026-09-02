@@ -1,0 +1,39 @@
+{
+  "ready": true,
+  "rows": 245858,
+  "tables": [
+    "P1",
+    "P10",
+    "P11",
+    "P12",
+    "P2",
+    "P4",
+    "P5",
+    "P6",
+    "P7",
+    "P8",
+    "P9"
+  ],
+  "years": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2024
+  ],
+  "version": "ons-verified-2026-10-28",
+  "mode": "ons",
+  "manifest_sha256": "b98880a2474331de4f62a346f257202ed3ed15d91b961f9d443e7545a9a9fd93",
+  "built_at": "2026-10-28T08:09:23.502752+00:00",
+  "notice": "Pinned ONS sources; inspect the manifest for editions and coverage.",
+  "agent_configured": false
+}

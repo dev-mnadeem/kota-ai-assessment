@@ -1,0 +1,12 @@
+{
+  "engine": "n8n 2.45.5",
+  "runtime": "Node 26.0.0",
+  "dataset": "Explicit synthetic fixture; no paid model call",
+  "checks": [
+    "Imported exact workflow with only local connection URL/id changed",
+    "Missing snapshot built and validated: 6 rows",
+    "Repeated check took already-current branch",
+    "Checksum failure took failure branch and preserved the previous snapshot"
+  ],
+  "workflow_sha256": "2b2ea0771578fbfac9a582451a3cf94b080d2f23a912d58e92a0e304e0ab3e5f"
+}

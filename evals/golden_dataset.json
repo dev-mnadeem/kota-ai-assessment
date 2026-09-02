@@ -3,7 +3,9 @@
     "id": "dc_finance_2024",
     "question": "What percentage of employees in the finance sector are enrolled in a defined contribution scheme?",
     "intent": "industry_dc_rate",
-    "expected_tool_calls": ["lookup_industry_membership_rate"],
+    "expected_tool_calls": [
+      "lookup_industry_membership_rate"
+    ],
     "expected": {
       "industry": "Financial and insurance activities",
       "year": 2024,
@@ -20,7 +22,9 @@
     "id": "dc_manufacturing_2024",
     "question": "What's the defined contribution enrollment rate in manufacturing?",
     "intent": "industry_dc_rate",
-    "expected_tool_calls": ["lookup_industry_membership_rate"],
+    "expected_tool_calls": [
+      "lookup_industry_membership_rate"
+    ],
     "expected": {
       "industry": "Manufacturing",
       "year": 2024,
@@ -37,7 +41,9 @@
     "id": "trend_finance_overall",
     "question": "Has participation in the finance sector gone up or down since 2019?",
     "intent": "industry_trend",
-    "expected_tool_calls": ["industry_participation_trend"],
+    "expected_tool_calls": [
+      "industry_participation_trend"
+    ],
     "expected": {
       "industry": "Financial and insurance activities",
       "since_year": 2019,
@@ -58,28 +64,33 @@
     "id": "trend_construction_overall",
     "question": "Has participation in construction gone up or down since 2019?",
     "intent": "industry_trend",
-    "expected_tool_calls": ["industry_participation_trend"],
+    "expected_tool_calls": [
+      "industry_participation_trend"
+    ],
     "expected": {
       "industry": "Construction",
       "since_year": 2019,
       "latest_year": 2024,
-      "start_percent": 70.5,
+      "start_percent": 70.8,
       "end_percent": 78.5,
-      "delta_percentage_points": 8.0,
+      "delta_percentage_points": 7.7,
       "direction": "up"
     },
     "expected_source": "P2 (2019, 2024)",
     "required_answer_fragments": [
       "Construction",
-      "70.5%",
+      "70.8%",
       "78.5%"
-    ]
+    ],
+    "provenance_note": "2019 revised P2.1a All sheet, Construction F: no pension provision 29.2%; participation = 100 - 29.2. Archive SHA-256 2b5c48c5cfc3a8c4a78fe91e438b11e2d1c1613d55ab355bfff2a63dc4030c29; end-year 2024 participation 78.5%, delta 7.7 percentage points."
   },
   {
     "id": "small_vs_large_contrib",
     "question": "How do contribution rates for small employers compare to large ones?",
     "intent": "small_vs_large_contrib",
-    "expected_tool_calls": ["compare_contribution_bands_by_size"],
+    "expected_tool_calls": [
+      "compare_contribution_bands_by_size"
+    ],
     "expected": {
       "year": 2024,
       "small_group": "1-12 employees",
@@ -100,7 +111,9 @@
     "id": "advisory_boundary",
     "question": "Should we increase our contribution rate?",
     "intent": "advisory_edge",
-    "expected_tool_calls": ["compare_contribution_bands_by_size"],
+    "expected_tool_calls": [
+      "compare_contribution_bands_by_size"
+    ],
     "expected": {
       "year": 2024,
       "large_high_band_share": 73.8,
