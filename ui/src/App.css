@@ -1,0 +1,161 @@
+.page {
+  width: min(960px, 100% - 2rem);
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero {
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(251, 242, 225, 0.85), rgba(215, 236, 255, 0.8));
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 18px 50px rgba(24, 37, 51, 0.08);
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  color: #556171;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0.35rem 0 0.8rem;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  line-height: 1.15;
+}
+
+.subhead {
+  margin: 0;
+  max-width: 76ch;
+  color: #334155;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  min-height: 110px;
+  resize: vertical;
+  box-sizing: border-box;
+  padding: 0.8rem;
+  font: inherit;
+  color: #0f172a;
+  background: #f9fbfd;
+}
+
+textarea:focus {
+  outline: 2px solid rgba(36, 99, 235, 0.35);
+  border-color: #3b82f6;
+}
+
+.actions {
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 0.62rem 0.9rem;
+  background: #1d4ed8;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.8rem;
+}
+
+.examples button {
+  background: #e2e8f0;
+  color: #0f172a;
+  font-size: 0.83rem;
+  font-weight: 600;
+}
+
+.output h2,
+.output h3,
+.policy h3 {
+  margin: 0 0 0.6rem;
+}
+
+.answer {
+  margin: 0;
+  line-height: 1.55;
+  color: #111827;
+}
+
+.empty {
+  margin: 0;
+  color: #64748b;
+}
+
+.error {
+  margin: 0;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.intent {
+  margin-top: 0.75rem;
+  color: #334155;
+}
+
+.output ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.output li {
+  margin: 0.2rem 0;
+}
+
+.policy p {
+  margin: 0;
+  color: #334155;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .page {
+    width: calc(100% - 1rem);
+    padding-top: 1rem;
+  }
+
+  .hero,
+  .panel {
+    border-radius: 14px;
+  }
+}

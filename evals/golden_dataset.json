@@ -1,0 +1,147 @@
+[
+  {
+    "id": "dc_finance_2024",
+    "question": "What percentage of employees in the finance sector are enrolled in a defined contribution scheme?",
+    "intent": "industry_dc_rate",
+    "expected_tool_calls": ["lookup_industry_membership_rate"],
+    "expected": {
+      "industry": "Financial and insurance activities",
+      "year": 2024,
+      "percent": 52.9
+    },
+    "expected_source": "P2 (2024)",
+    "required_answer_fragments": [
+      "Financial and insurance activities",
+      "52.9%",
+      "defined contribution"
+    ]
+  },
+  {
+    "id": "dc_manufacturing_2024",
+    "question": "What's the defined contribution enrollment rate in manufacturing?",
+    "intent": "industry_dc_rate",
+    "expected_tool_calls": ["lookup_industry_membership_rate"],
+    "expected": {
+      "industry": "Manufacturing",
+      "year": 2024,
+      "percent": 41.9
+    },
+    "expected_source": "P2 (2024)",
+    "required_answer_fragments": [
+      "Manufacturing",
+      "41.9%",
+      "defined contribution"
+    ]
+  },
+  {
+    "id": "trend_finance_overall",
+    "question": "Has participation in the finance sector gone up or down since 2019?",
+    "intent": "industry_trend",
+    "expected_tool_calls": ["industry_participation_trend"],
+    "expected": {
+      "industry": "Financial and insurance activities",
+      "since_year": 2019,
+      "latest_year": 2024,
+      "start_percent": 91.8,
+      "end_percent": 94.5,
+      "delta_percentage_points": 2.7,
+      "direction": "up"
+    },
+    "expected_source": "P2 (2019, 2024)",
+    "required_answer_fragments": [
+      "2019",
+      "91.8%",
+      "94.5%"
+    ]
+  },
+  {
+    "id": "trend_construction_overall",
+    "question": "Has participation in construction gone up or down since 2019?",
+    "intent": "industry_trend",
+    "expected_tool_calls": ["industry_participation_trend"],
+    "expected": {
+      "industry": "Construction",
+      "since_year": 2019,
+      "latest_year": 2024,
+      "start_percent": 70.5,
+      "end_percent": 78.5,
+      "delta_percentage_points": 8.0,
+      "direction": "up"
+    },
+    "expected_source": "P2 (2019, 2024)",
+    "required_answer_fragments": [
+      "Construction",
+      "70.5%",
+      "78.5%"
+    ]
+  },
+  {
+    "id": "small_vs_large_contrib",
+    "question": "How do contribution rates for small employers compare to large ones?",
+    "intent": "small_vs_large_contrib",
+    "expected_tool_calls": ["compare_contribution_bands_by_size"],
+    "expected": {
+      "year": 2024,
+      "small_group": "1-12 employees",
+      "large_group": "1000+ employees",
+      "small_high_band_share": 18.8,
+      "large_high_band_share": 73.8,
+      "delta_percentage_points": 55.0,
+      "small_under4_share": 62.1,
+      "large_under4_share": 12.1
+    },
+    "expected_source": "P12 (2024)",
+    "required_answer_fragments": [
+      "73.8%",
+      "18.8%"
+    ]
+  },
+  {
+    "id": "advisory_boundary",
+    "question": "Should we increase our contribution rate?",
+    "intent": "advisory_edge",
+    "expected_tool_calls": ["compare_contribution_bands_by_size"],
+    "expected": {
+      "year": 2024,
+      "large_high_band_share": 73.8,
+      "small_high_band_share": 18.8
+    },
+    "expected_source": "P12 (2024)",
+    "required_answer_fragments": [
+      "advi"
+    ]
+  },
+  {
+    "id": "gender_gap_not_in_scope",
+    "question": "What's the gender gap in pension participation in the private sector?",
+    "intent": "gender_gap",
+    "expected_tool_calls": [],
+    "expected": {},
+    "expected_source": null,
+    "required_answer_fragments": [
+      "gender"
+    ]
+  },
+  {
+    "id": "unsupported_forecast",
+    "question": "What will pension participation be in 2030?",
+    "intent": "unsupported",
+    "expected_tool_calls": [],
+    "expected": {},
+    "expected_source": null,
+    "required_answer_fragments": [
+      "2030"
+    ]
+  },
+  {
+    "id": "ambiguous_industry_reference",
+    "question": "Has participation in our industry gone up or down since 2019?",
+    "intent": "industry_trend",
+    "expected_tool_calls": [],
+    "expected": {},
+    "expected_source": null,
+    "required_answer_fragments": [
+      "industry"
+    ]
+  }
+]
