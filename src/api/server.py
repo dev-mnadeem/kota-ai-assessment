@@ -1,19 +1,21 @@
 from __future__ import annotations
 
+import hmac
+import json
 import logging
+import os
 from pathlib import Path
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException, Header
+from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 
 from src.agent import ask_agent
-from src.datasets import status as dataset_status, build as build_dataset, fingerprint
-import os
-import hmac
-import json
-from fastapi.responses import JSONResponse
+from src.datasets import build as build_dataset
+from src.datasets import fingerprint
+from src.datasets import status as dataset_status
 
 
 load_dotenv(dotenv_path=Path(__file__).resolve().parents[2] / ".env")
@@ -29,15 +31,20 @@ app = FastAPI(title="ASHE Pension Agent API", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        origin.strip()
+        for origin in os.getenv("ASHE_CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",")
+        if origin.strip()
+    ],
     allow_credentials=False,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
 )
 
 
 class AskRequest(BaseModel):
-    question: str = Field(..., min_length=5)
+    # The upper bound keeps one request from becoming an unbounded provider bill.
+    question: str = Field(..., min_length=5, max_length=1000)
 
 
 class AskResponse(BaseModel):
@@ -71,19 +78,26 @@ def source_status(authorization: str | None = Header(default=None)):
     path = Path(os.getenv("ASHE_SOURCE_MANIFEST", "sources/ons.json"))
     manifest = json.loads(path.read_text())
     current = dataset_status(os.getenv("ASHE_DB_PATH", "data/ashe.db"))
-    return {"refresh_needed":current.get("manifest_sha256") != fingerprint(path),
-            "approved_version":manifest["version"], "current":current}
+    return {
+        "refresh_needed": current.get("manifest_sha256") != fingerprint(path),
+        "approved_version": manifest["version"],
+        "current": current,
+    }
 
 
 @app.post("/admin/refresh")
 def refresh(authorization: str | None = Header(default=None)):
     require_refresh_access(authorization)
     try:
-        return build_dataset(os.getenv("ASHE_SOURCE_MANIFEST", "sources/ons.json"),
-                             os.getenv("ASHE_DB_PATH", "data/ashe.db"))
-    except Exception:
+        return build_dataset(
+            os.getenv("ASHE_SOURCE_MANIFEST", "sources/ons.json"),
+            os.getenv("ASHE_DB_PATH", "data/ashe.db"),
+        )
+    except Exception as exc:  # noqa: BLE001 - any build failure must leave the old snapshot and report 503
         LOGGER.exception("dataset_refresh_failed")
-        raise HTTPException(status_code=503, detail="Dataset refresh failed; the previous snapshot was preserved.")
+        raise HTTPException(
+            status_code=503, detail="Dataset refresh failed; the previous snapshot was preserved."
+        ) from exc
 
 
 @app.post("/api/ask", response_model=AskResponse)

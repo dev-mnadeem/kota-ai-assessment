@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -83,7 +84,7 @@ def _log(node: str, message: str, payload: dict[str, Any] | None = None) -> None
     if payload is not None:
         try:
             data = " | " + json.dumps(payload, ensure_ascii=True, default=str)
-        except Exception:
+        except (TypeError, ValueError):
             data = " | <payload-unserializable>"
     LOGGER.info("node=%s | %s%s", node, message, data)
 
@@ -254,6 +255,7 @@ def _route_after_critic(state: AgentState) -> str:
     return "agent"
 
 
+@lru_cache(maxsize=1)
 def build_agent_graph():
     graph = StateGraph(AgentState)
     graph.add_node("agent", _agent_node)
@@ -270,7 +272,7 @@ def build_agent_graph():
 
 def ask_agent(question: str) -> dict[str, Any]:
     app = build_agent_graph()
-    _log("entry", "incoming request", {"question": question})
+    _log("entry", "incoming request", {"question_chars": len(question)})
     result = app.invoke({"messages": [HumanMessage(content=question)], "critic_attempts": 0})
 
     messages = result["messages"]
