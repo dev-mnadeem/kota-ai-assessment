@@ -136,3 +136,7 @@ The main extension points are `src/agent/tools.py` for retrieval, `src/agent/gra
 for reasoning, `src/datasets.py` for snapshot publication, and `sources/ons.json` for
 approved inputs. Keeping those boundaries explicit makes it possible to test data
 correctness without depending on model behavior.
+
+## Author
+
+[**Muhammad Nadeem**](https://github.com/dev-mnadeem)
