@@ -2,22 +2,22 @@
 from __future__ import annotations
 
 import csv
-from contextlib import closing
 import fcntl
 import hashlib
 import io
 import json
 import os
 import re
-from pathlib import Path
 import sqlite3
 import tempfile
 import time
-from datetime import datetime, timezone
+import zipfile
+from contextlib import closing
+from datetime import UTC, datetime
+from pathlib import Path
+from urllib.error import HTTPError
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
-from urllib.error import HTTPError
-import zipfile
 
 from scripts.normalize_to_sqlite import ensure_schema, iter_data_records
 
@@ -28,6 +28,7 @@ COLUMNS = (
 )
 MAX_ARCHIVE_BYTES = 5_000_000
 MAX_WORKBOOK_BYTES = 20_000_000
+DEFAULT_NOTICE = 'Pinned ONS sources; inspect the manifest for editions and coverage.'
 
 
 def fingerprint(path: Path) -> str:
@@ -124,7 +125,9 @@ def source_records(source: dict, cache: Path, temporary: Path):
                 raise ValueError('Unexpected table identifier')
             prepared = temporary / f"{year}_{table_id}__All.csv"
             with prepared.open('w',newline='') as handle:
-                csv.writer(handle).writerows([[str(value) if value is not None else '' for value in row] for row in rows])
+                csv.writer(handle).writerows(
+                    [[str(value) if value is not None else '' for value in row] for row in rows]
+                )
             records = iter_data_records(prepared)
             if not records:
                 raise ValueError('Pinned source produced no observations')
@@ -139,8 +142,9 @@ def build(manifest_path: str | Path, db_path: str | Path) -> dict:
     if not manifest.get('sources') or manifest.get('mode') not in {'fixture','ons'}:
         raise ValueError('A versioned source manifest is required')
     target = Path(db_path).resolve()
-    target.parent.mkdir(parents=True,exist_ok=True)
-    cache = target.parent / 'cache';cache.mkdir(exist_ok=True)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    cache = target.parent / 'cache'
+    cache.mkdir(exist_ok=True)
     with (target.parent / 'refresh.lock').open('a') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
         with tempfile.TemporaryDirectory(prefix='.ashe-build-', dir=target.parent) as folder:
@@ -148,16 +152,19 @@ def build(manifest_path: str | Path, db_path: str | Path) -> dict:
             staged = temporary / 'snapshot.db'
             with closing(sqlite3.connect(staged)) as connection, connection:
                 ensure_schema(connection)
-                placeholders = ','.join('?' for _ in COLUMNS)
+                insert = f"INSERT INTO observations ({','.join(COLUMNS)}) VALUES ({','.join('?' for _ in COLUMNS)})"
                 for source in manifest['sources']:
                     rows = list(source_records(source, cache, temporary))
-                    connection.executemany(f"INSERT INTO observations ({','.join(COLUMNS)}) VALUES ({placeholders})", [tuple(row[key] for key in COLUMNS) for row in rows])
-                    connection.execute('INSERT INTO ingest_log (source_file,status,rows_loaded,error_message) VALUES (?,?,?,NULL)', (source.get('url') or source['path'],'ok',len(rows)))
+                    connection.executemany(insert, [tuple(row[key] for key in COLUMNS) for row in rows])
+                    connection.execute(
+                        'INSERT INTO ingest_log (source_file,status,rows_loaded,error_message) VALUES (?,?,?,NULL)',
+                        (source.get('url') or source['path'], 'ok', len(rows)),
+                    )
                 connection.execute('CREATE TABLE dataset_metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL)')
                 metadata = {'version':manifest['version'], 'mode':manifest['mode'],
                             'manifest_sha256':fingerprint(manifest_path),
-                            'built_at':datetime.now(timezone.utc).isoformat(),
-                            'notice':manifest.get('notice','Pinned ONS sources; inspect the manifest for editions and coverage.')}
+                            'built_at':datetime.now(UTC).isoformat(),
+                            'notice':manifest.get('notice', DEFAULT_NOTICE)}
                 connection.executemany('INSERT INTO dataset_metadata VALUES (?,?)',metadata.items())
                 if connection.execute('PRAGMA quick_check').fetchone()[0] != 'ok':
                     raise ValueError('SQLite integrity check failed')

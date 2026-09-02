@@ -17,7 +17,6 @@ from src.datasets import build as build_dataset
 from src.datasets import fingerprint
 from src.datasets import status as dataset_status
 
-
 load_dotenv(dotenv_path=Path(__file__).resolve().parents[2] / ".env")
 
 LOGGER = logging.getLogger("ashe_api")
@@ -116,7 +115,9 @@ def ask(request: AskRequest) -> AskResponse:
         result = ask_agent(question)
     except Exception as exc:  # noqa: BLE001
         LOGGER.exception("api_request_failed | error=%s", exc)
-        raise HTTPException(status_code=500, detail="The agent could not complete this request. Please try again.") from exc
+        raise HTTPException(
+            status_code=500, detail="The agent could not complete this request. Please try again."
+        ) from exc
 
     tool_calls = result.get("tool_calls") or []
     LOGGER.info(

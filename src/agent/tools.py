@@ -4,15 +4,14 @@ import dataclasses
 import os
 import re
 import sqlite3
-from contextlib import contextmanager
 from collections.abc import Iterator
+from contextlib import contextmanager
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Literal
 
 from langchain_core.tools import tool
 from pydantic import BaseModel, Field
-
 
 INDUSTRY_ALIASES = {
     "finance": "Financial and insurance activities",

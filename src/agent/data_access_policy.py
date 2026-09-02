@@ -47,7 +47,9 @@ ACCESS_DECISIONS = [
             "loop on failure."
         ),
         latency_cost="One extra LLM call per turn (the critic), plus up to one rewrite.",
-        failure_mode_if_wrong="Agent might drift into advisory recommendations if the critic itself misjudges an answer.",
+        failure_mode_if_wrong=(
+            "Agent might drift into advisory recommendations if the critic itself misjudges an answer."
+        ),
     ),
     AccessDecision(
         data_type="Latest ONS release metadata",

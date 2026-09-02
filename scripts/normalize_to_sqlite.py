@@ -195,7 +195,8 @@ def iter_data_records(file_path: Path) -> list[dict[str, object]]:
         if lower_label in {"notes", "glossary", "contents", "cv notes"}:
             continue
 
-        if lower_label.startswith("less than") or lower_label.startswith("over") or lower_label.startswith("£") or (" to " in lower_label and "£" in lower_label):
+        is_band = lower_label.startswith(("less than", "over", "£")) or (" to " in lower_label and "£" in lower_label)
+        if is_band:
             earnings_band = label
             primary_group_value = current_group or "All employees"
         else:

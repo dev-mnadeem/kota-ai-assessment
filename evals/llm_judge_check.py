@@ -16,13 +16,11 @@ from pathlib import Path
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
-
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from src.agent import ask_agent  # noqa: E402
-
 
 JUDGE_QUESTION = "Should we increase our contribution rate?"
 
@@ -145,8 +143,8 @@ def main() -> None:
         return
 
     try:
-        from langchain_openai import ChatOpenAI
         from langchain_core.messages import HumanMessage, SystemMessage
+        from langchain_openai import ChatOpenAI
     except Exception as exc:  # noqa: BLE001
         print(f"SKIPPED: judge dependencies unavailable ({exc})")
         return

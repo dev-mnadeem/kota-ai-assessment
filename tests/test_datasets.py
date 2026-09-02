@@ -1,13 +1,12 @@
 import json
 import sqlite3
-from pathlib import Path
 
 import pytest
 from fastapi.testclient import TestClient
 
-from src.datasets import ROOT, build, status
 from src.agent.tools import SQLiteTools
 from src.api.server import app
+from src.datasets import ROOT, build, status
 
 
 @pytest.fixture

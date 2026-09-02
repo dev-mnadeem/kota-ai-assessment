@@ -19,7 +19,6 @@ could otherwise imply it has live/current data it does not have.
 
 from __future__ import annotations
 
-
 SYSTEM_PROMPT = """
 # Role and audience
 
