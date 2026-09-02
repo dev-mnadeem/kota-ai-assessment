@@ -1,0 +1,7 @@
+table_id,year,segment,work_pattern,primary_group_type,primary_group_value,earnings_band,pension_type,measure_type,value_num,value_raw,suppression_flag,source_file
+P2,2023,All,All,industry,Financial and insurance activities,,Defined contribution,percent_jobs,60,60,,synthetic-fixture
+P2,2024,All,All,industry,Financial and insurance activities,,Defined contribution,percent_jobs,65,65,,synthetic-fixture
+P2,2024,All,All,industry,Construction,,Defined contribution,percent_jobs,40,40,,synthetic-fixture
+P2,2024,All,All,industry,Manufacturing,,Defined contribution,percent_jobs,,,u,synthetic-fixture
+P12,2024,All,All,employer_size,1 to 99,,Defined contribution,percent_jobs,50,50,,synthetic-fixture
+P12,2024,All,All,employer_size,100 to 499,,Defined contribution,percent_jobs,70,70,,synthetic-fixture

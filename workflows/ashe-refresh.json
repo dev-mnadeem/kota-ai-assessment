@@ -1,0 +1,354 @@
+{
+  "name": "ASHE approved dataset refresh",
+  "nodes": [
+    {
+      "id": "146fcd9c-affe-4f0a-ab48-209665382d39",
+      "name": "Run now",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "fd020f94-2c2f-43e8-9083-dc4a7aa1ef46",
+      "name": "Daily approved-source check",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        200
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 6 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "9340d5a3-51a6-472d-916b-ffd367f34e72",
+      "name": "Check approved version",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        240,
+        100
+      ],
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $(\"API connection\").first().json.baseUrl + \"/admin/source-status\" }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {
+          "timeout": 1200000
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "ashe-refresh-token",
+          "name": "ASHE refresh token"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "8f9e1d3b-97d8-4525-bb96-0d6f570f6942",
+      "name": "Refresh needed?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        480,
+        100
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "fab09db2-d9f5-458a-92a5-98db29215b66",
+              "leftValue": "={{ $json.refresh_needed }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      }
+    },
+    {
+      "id": "9dbc73d4-0639-4a8a-9b1d-d092f3ef33bd",
+      "name": "Build and atomically promote",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        720,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $(\"API connection\").first().json.baseUrl + \"/admin/refresh\" }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {
+          "timeout": 1200000
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "ashe-refresh-token",
+          "name": "ASHE refresh token"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "49976b0f-60f8-4841-85d6-7ae15afd8b82",
+      "name": "Snapshot validated?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        960,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "e08b0d68-4732-47f3-b7df-85e5cc706c5a",
+              "leftValue": "={{ $json.ready === true && $json.rows > 0 }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      }
+    },
+    {
+      "id": "baabd5dc-2e5f-4df7-b594-6c56c857f33c",
+      "name": "Record ready snapshot",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1200,
+        -60
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9105353d-d641-419a-8e82-0a460cf66658",
+              "name": "refresh_status",
+              "value": "ready",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true
+      }
+    },
+    {
+      "id": "72b4bb2c-bcd6-4c80-9605-fd0f683e456d",
+      "name": "Already current",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        720,
+        200
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "dc543e8c-9132-4d4d-a265-0d780515efdd",
+              "name": "refresh_status",
+              "value": "already-current",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true
+      }
+    },
+    {
+      "id": "3f58544c-9914-418b-84cf-9e512c7de919",
+      "name": "Refresh failed",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        1200,
+        300
+      ],
+      "parameters": {
+        "errorType": "errorMessage",
+        "errorMessage": "Dataset refresh failed or validation rejected the snapshot. The previous dataset remains available."
+      }
+    },
+    {
+      "id": "9223b2a3-10cd-4cb4-b859-df6ae81b3277",
+      "name": "API connection",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        180,
+        100
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "2a3d4003-9d39-4172-9f00-b8798b47ce6f",
+              "name": "baseUrl",
+              "value": "http://127.0.0.1:8000",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Run now": {
+      "main": [
+        [
+          {
+            "node": "API connection",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Daily approved-source check": {
+      "main": [
+        [
+          {
+            "node": "API connection",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check approved version": {
+      "main": [
+        [
+          {
+            "node": "Refresh needed?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Refresh failed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Refresh needed?": {
+      "main": [
+        [
+          {
+            "node": "Build and atomically promote",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Already current",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build and atomically promote": {
+      "main": [
+        [
+          {
+            "node": "Snapshot validated?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Refresh failed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Snapshot validated?": {
+      "main": [
+        [
+          {
+            "node": "Record ready snapshot",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Refresh failed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "API connection": {
+      "main": [
+        [
+          {
+            "node": "Check approved version",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "UTC"
+  },
+  "pinData": {},
+  "versionId": "4b4b371d-dafc-49a5-992b-1d35dbd2f0dc"
+}

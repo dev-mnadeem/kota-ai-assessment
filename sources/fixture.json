@@ -1,0 +1,12 @@
+{
+  "version": "synthetic-fixture-v1",
+  "mode": "fixture",
+  "notice": "Synthetic values for software tests; not ONS statistics.",
+  "sources": [
+    {
+      "path": "fixtures/observations.csv",
+      "sha256": "0ebb56fefe5dbd81c66f8027d1a2ae7ed66ab8850fcc34d92256f7f3282d11a6",
+      "format": "normalized-csv"
+    }
+  ]
+}

@@ -1,0 +1,1225 @@
+{
+  "version": "ons-verified-2026-10-28",
+  "retrieved_on": "2026-10-28",
+  "mode": "ons",
+  "segment": "All",
+  "license": "Open Government Licence v3.0",
+  "sources": [
+    {
+      "table_id": "P5",
+      "year": 2009,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2009/2009-table-p5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "d16f76be734e8ae06cc9edcef3577270750583580230df99441d60e5e9b1c60c",
+      "bytes": 40655
+    },
+    {
+      "table_id": "P5",
+      "year": 2010,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2010revised/2010-revised-table-p5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "b0bd7583144659751169ba08b80378b6147fc3192c240354f83df41a2c7c2359",
+      "bytes": 46380
+    },
+    {
+      "table_id": "P5",
+      "year": 2011,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2011revisedsoc2010/2011-revised-table-p5--soc-2010-.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "8b77a697317709348b0c1aa3abaddd2729eaa72b0c3794373bf0ec06a333c023",
+      "bytes": 44772
+    },
+    {
+      "table_id": "P5",
+      "year": 2012,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2012revised/2012-revised-table-p5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "33070ba351344fb9f62f92ea1cc2aea347b72cbebab0d1b907a27d55eab66eff",
+      "bytes": 54167
+    },
+    {
+      "table_id": "P5",
+      "year": 2013,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2013revised/2013-revised-table-p5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "1771cbf09fec97ca6407371e4b56481055ee64e260e9b638d2bbad240588a8be",
+      "bytes": 36066
+    },
+    {
+      "table_id": "P5",
+      "year": 2014,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2014/2014revisedtablep5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "fd10e5ce2f7ce4fb3db7e8e289d5c3104a71d120a7be97e035de9e411efb4327",
+      "bytes": 42823
+    },
+    {
+      "table_id": "P5",
+      "year": 2015,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2015/2015revisedtablep5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "62b740363bb9ec4874c8819e08f7f1e5884c18914bed2a75bd0749c98622e9aa",
+      "bytes": 43553
+    },
+    {
+      "table_id": "P5",
+      "year": 2016,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2016revised/2016revisedtablep5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "fc3a8985463de208787faaae6243146be8bcf4f56b72366c5ed45d2fcb91321f",
+      "bytes": 37695
+    },
+    {
+      "table_id": "P5",
+      "year": 2017,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2017revised/2017revisedtablep5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "3005a345d52c95466686432773cfbc2a4edb2b9876a82bf8143d4c8e6f674de6",
+      "bytes": 71630
+    },
+    {
+      "table_id": "P5",
+      "year": 2018,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2018revised/2018revisedtablep5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "397e5f67a5a45b1cba00893eb6b035c05f4fee205c23f847f7429db1309b5057",
+      "bytes": 71990
+    },
+    {
+      "table_id": "P5",
+      "year": 2019,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2019revised/2019revisedtablep5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "3090c2941fe90b9ba728048e7d10eae9d9ca611f002d4bdee9a4a30b1f5cc16a",
+      "bytes": 71648
+    },
+    {
+      "table_id": "P5",
+      "year": 2020,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2020revised/2020revisedtablep5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "39e79413a78850f387d67873b391b97a49b5a3b7848d498ccaef62c8482fab0d",
+      "bytes": 73278
+    },
+    {
+      "table_id": "P5",
+      "year": 2021,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2021provisional/2021provisionaltablep5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "975b4454af92769a5adb6eab82047309074f500eea7f371890461c27f2939e2d",
+      "bytes": 84716
+    },
+    {
+      "table_id": "P5",
+      "year": 2024,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5/2024provisional/2024provisionalp5.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyagegroupandbypensiontypep5",
+      "sha256": "83b1d0074c4bcf5ae24ffe0366e55487a273cd825d213f2ff41609d45be28e6b",
+      "bytes": 323953
+    },
+    {
+      "table_id": "P6",
+      "year": 2009,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2009/2009-table-p6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "411223dd843c854061a110c02e734c3eb44ccfe1824c70fb766397896df8c1d1",
+      "bytes": 109945
+    },
+    {
+      "table_id": "P6",
+      "year": 2010,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2010revised/2010-revised-table-p6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "1885e7f57bdc5cf70b33317e28ae424d2b16524d0c2e72f1966723c32336f2a8",
+      "bytes": 129212
+    },
+    {
+      "table_id": "P6",
+      "year": 2011,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2011revisedsoc2010/2011-revised-table-p6--soc-2010-.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "e9346c6f6f570d2b986fd48cb31d8701d649574882c4c5e58256defe22b40f42",
+      "bytes": 127405
+    },
+    {
+      "table_id": "P6",
+      "year": 2012,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2012revised/2012-revised-table-p6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "0c4d95d3427e3d3e9c6b76605664412a5cea284edac1f89ec679a88e836bf245",
+      "bytes": 136477
+    },
+    {
+      "table_id": "P6",
+      "year": 2013,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2013revised/2013-revised-table-p6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "e8acfb6354f50d276294a59286ab3fc95515892b1f4eb0a9651f54a6e731afb6",
+      "bytes": 100692
+    },
+    {
+      "table_id": "P6",
+      "year": 2014,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2014/2014revisedtablep6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "f9df8bdafbb84c72ebd777ae97f936f067c94504f43786bf1bf618c9c4eedf5d",
+      "bytes": 107679
+    },
+    {
+      "table_id": "P6",
+      "year": 2015,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2015/2015revisedtablep6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "c1df17f2d1cb6c45b50e89066d3fd260a350b9ba62cd2919c7f6ebe97d8ec22c",
+      "bytes": 109150
+    },
+    {
+      "table_id": "P6",
+      "year": 2016,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2016revised/2016revisedtablep6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "09a2fe3bf7dd4ac07a4b3b138c88c6b0ee42df6b6dfd6b54f5976f3e557e3e67",
+      "bytes": 80281
+    },
+    {
+      "table_id": "P6",
+      "year": 2017,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2017revised/2017revisedtablep6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "ec367e032de0757e1e6bb3682038978cf1d69be94166f430c19fdb472b8db609",
+      "bytes": 201264
+    },
+    {
+      "table_id": "P6",
+      "year": 2018,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2018revised/2018revisedtablep6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "70f6968347b49b7d5d71bf1a29f9aa388dc34d969b7e03d174f2813deb7ea0d0",
+      "bytes": 201390
+    },
+    {
+      "table_id": "P6",
+      "year": 2019,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2019revised/2019revisedtablep6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "d7cd2d32e97284bee291c9f09bf24a81f136ac9322887edce668d79520dc2e50",
+      "bytes": 199344
+    },
+    {
+      "table_id": "P6",
+      "year": 2020,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2020revised/2020revisedtablep6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "272d57f483f895af7066a7403cc2664014b5bd1c1122cbe8d2f4ff63f89f9692",
+      "bytes": 201912
+    },
+    {
+      "table_id": "P6",
+      "year": 2021,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2021provisional/2021provisionaltablep6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "d89c9b7d786f68c2e9b8fe6216070ae0461ceec9da49a4a0379db18ffa394d73",
+      "bytes": 199312
+    },
+    {
+      "table_id": "P6",
+      "year": 2024,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6/2024provisional/2024provisionalp6.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyindustryandbypensiontypep6",
+      "sha256": "28c648ab636863e50602958ee3fe8f740c7e71bd5bfa437ffd0a0c7c91365338",
+      "bytes": 578364
+    },
+    {
+      "table_id": "P7",
+      "year": 2009,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2009/2009-table-p7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "aa2a2d72ea116df498f67d961fd7b6f1abbe64b591a44cf30a0a65bc23c9013e",
+      "bytes": 45841
+    },
+    {
+      "table_id": "P7",
+      "year": 2010,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2010revised/2010-revised-table-p7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "96935f7ac4db30e0c6fb4a63fc2250c0625bdcee065a3c1a816dd0140be641a0",
+      "bytes": 51169
+    },
+    {
+      "table_id": "P7",
+      "year": 2011,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2011revisedsoc2010/2011-revised-table-p7--soc-2010-.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "6bcbd121559cc16d621eb39abda0fc720f90d0a57f99d1289f318dd82ab89254",
+      "bytes": 49724
+    },
+    {
+      "table_id": "P7",
+      "year": 2012,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2012revised/2012-revised-table-p7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "fb35790c65c93f1482e6a1ff7170419e6f5a0e619b018f2af9f02d83e1e55e3f",
+      "bytes": 58640
+    },
+    {
+      "table_id": "P7",
+      "year": 2013,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2013revised/2013-revised-table-p7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "44d42cb8be1deeb2f4bddf2283dd22287bd078c1063c090088746376bd96c63f",
+      "bytes": 39194
+    },
+    {
+      "table_id": "P7",
+      "year": 2014,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2014/2014revisedtablep7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "53ef4638b5ae8572bcb631c0e356677642ea72dffa8789b347c70d989f48d071",
+      "bytes": 45670
+    },
+    {
+      "table_id": "P7",
+      "year": 2015,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2015/2015revisedtablep7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "32bbdded9d4c8c2df0a7324f8803b3e5a9333b1167b26a5c09dac4893fd54a2f",
+      "bytes": 46413
+    },
+    {
+      "table_id": "P7",
+      "year": 2016,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2016revised/2016revisedtablep7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "6175531484a271518f866e9fb39891c3db1152070f9a7bbbfcfb9f2250dc6f43",
+      "bytes": 40538
+    },
+    {
+      "table_id": "P7",
+      "year": 2017,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2017revised/2017revisedtablep7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "667024d1009f7a546153c09c634e36a5f35e919f443577dd16be65c9cf77d190",
+      "bytes": 78076
+    },
+    {
+      "table_id": "P7",
+      "year": 2018,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2018revised/2018revisedtablep7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "419965a2bd46494a598cc58a534d2706a3c23d07ab3e94bb139654151a2634cd",
+      "bytes": 79490
+    },
+    {
+      "table_id": "P7",
+      "year": 2019,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2019revised/2019revisedtablep7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "af5cc7bdbcfae5c8230e692ff4610c69a270bbf8f7a06f703eccfb11b1d09599",
+      "bytes": 78784
+    },
+    {
+      "table_id": "P7",
+      "year": 2020,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2020revised/2020revisedtablep7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "05ac3ed59780b0d1d31b48c3622709fcf835d8343650b6ebf50b8d19619f9c3f",
+      "bytes": 79754
+    },
+    {
+      "table_id": "P7",
+      "year": 2021,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2021provisional/2021provisionaltablep7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "5fb4dc86bf6b00d6ce5d3b798491869e801e424e6c6e5023f337d5341676a51b",
+      "bytes": 79386
+    },
+    {
+      "table_id": "P7",
+      "year": 2024,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7/2024provisional/2024provisionalp7.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbyoccupationandbypensiontypep7",
+      "sha256": "fe9259257d5cb4e7eccfca36885d17abbc6795a7e450fcbd4e22fa5f73ca7524",
+      "bytes": 344304
+    },
+    {
+      "table_id": "P8",
+      "year": 2009,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2009/2009-table-p8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "cfe9b6699c39150f3c1fbc9517d5371d336d214337e3a340e34f9cbf7c911f92",
+      "bytes": 31582
+    },
+    {
+      "table_id": "P8",
+      "year": 2010,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2010revised/2010-revised-table-p8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "9c3ff63421c9bf1e493c21ec433ca886259aca344fe87d2a2b61801a23b292f8",
+      "bytes": 36686
+    },
+    {
+      "table_id": "P8",
+      "year": 2011,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2011revisedsoc2010/2011-revised-table-p8--soc-2010-.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "62de73f85dbab443b2d6a7c18e9500eda848a7b1e1e186147f9de6d6e312eafd",
+      "bytes": 36512
+    },
+    {
+      "table_id": "P8",
+      "year": 2012,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2012revised/2012-revised-table-p8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "217e0cfdf8ab4051ce1dca66ac29171c5da185053168b4ba4c3d70d5ae39ffbf",
+      "bytes": 44321
+    },
+    {
+      "table_id": "P8",
+      "year": 2013,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2013revised/2013-revised-table-p8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "ae9b93e293cc3209d39afc4bc33a7341660e20730a5b46d0bb6d7790c4a28030",
+      "bytes": 29725
+    },
+    {
+      "table_id": "P8",
+      "year": 2014,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2014/2014revisedtablep8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "482c7f91049fe2f44f9aa51082c31b4b971404bffd133d96812852c699529440",
+      "bytes": 36807
+    },
+    {
+      "table_id": "P8",
+      "year": 2015,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2015/2015revisedtablep8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "630c22b65b1ff9294b7678dad8256398b94c5aa2f4027137e82a22e76685e4f2",
+      "bytes": 37340
+    },
+    {
+      "table_id": "P8",
+      "year": 2016,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2016revised/2016revisedtablep8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "093e39418b3a4bee7c984e338450c6b9482316adeb4f10c1eb4b51e2a676a337",
+      "bytes": 33366
+    },
+    {
+      "table_id": "P8",
+      "year": 2017,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2017revised/2017revisedtablep8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "db7befe6d8417e6860c3070827d26e496779f1b6d9ce8744906c308e33499382",
+      "bytes": 59029
+    },
+    {
+      "table_id": "P8",
+      "year": 2018,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2018revised/2018revisedtablep8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "286d7097b9d4fa4babfa24c4474514698c7d791fc9107232925c4f77d8d9d0d3",
+      "bytes": 59430
+    },
+    {
+      "table_id": "P8",
+      "year": 2019,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2019revised/2019revisedtablep8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "10feac5d1b90dc348763e20fe4f7690fd338ccfe6d2cf7f3d59171f6f2cbfa58",
+      "bytes": 58793
+    },
+    {
+      "table_id": "P8",
+      "year": 2020,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2020revised/2020revisedtablep8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "5541381ec648b7d84b8ce2a5ef6bfa3094c3e291f858fa0fdf5ed988d9208d29",
+      "bytes": 60368
+    },
+    {
+      "table_id": "P8",
+      "year": 2021,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2021provisional/2021provisionaltablep8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "41cf3a068adad217b9abc851bf4bff2120ec49c554b36c0a70b7e0b2cfa97b99",
+      "bytes": 60209
+    },
+    {
+      "table_id": "P8",
+      "year": 2024,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8/2024provisional/2024provisionalp8.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployeecontributionbandsbysizeofbusinessandbypensiontypep8",
+      "sha256": "15c15c3214366ccfb41da6d6fbe12db8d5e2f0e72212cc9c22e81d3a27b24491",
+      "bytes": 275868
+    },
+    {
+      "table_id": "P9",
+      "year": 2009,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2009/2009-table-p9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "8ec6b0f0af595c66a71a8845389e31133a0bf5999619df4f447171553fc5bdcc",
+      "bytes": 40653
+    },
+    {
+      "table_id": "P9",
+      "year": 2010,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2010revised/2010-revised-table-p9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "46aef17aa6534615d76cde448125e3c007e4232d6e5bdceb1bc5f935c1ce2b44",
+      "bytes": 46314
+    },
+    {
+      "table_id": "P9",
+      "year": 2011,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2011revisedsoc2010/2011-revised-table-p9--soc-2010-.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "9f40ee65f60cdb5313e15799705984428c3d30b27bbb9b74942b9546f2de5271",
+      "bytes": 45010
+    },
+    {
+      "table_id": "P9",
+      "year": 2012,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2012revised/2012-revised-table-p9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "33a6f0d6ad36d5ed10641e71ff0a31042aacbf567c0f606bd6346040f347c25a",
+      "bytes": 54521
+    },
+    {
+      "table_id": "P9",
+      "year": 2013,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2013revised/2013-revised-table-p9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "ab0fd802e53e902ac697fed78bed4ba11bd141dc5eaad076217c2f24a7cf7478",
+      "bytes": 36654
+    },
+    {
+      "table_id": "P9",
+      "year": 2014,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2014/2014revisedtablep9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "16bfc6ddc381322e57c41e620247584e6e8eac14cc9111b31c60d3aa3ef8297b",
+      "bytes": 42964
+    },
+    {
+      "table_id": "P9",
+      "year": 2015,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2015/2015revisedtablep9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "d7bddc151c5608615e2d82b4d066c7ca89809102d4e668614988927051d0e7bb",
+      "bytes": 43382
+    },
+    {
+      "table_id": "P9",
+      "year": 2016,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2016revised/2016revisedtablep9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "706c2240fdb5d62f07a82acb207e593141a59491ae2148013a48fff88869c114",
+      "bytes": 37977
+    },
+    {
+      "table_id": "P9",
+      "year": 2017,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2017revised/2017revisedtablep9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "db03b302dc13eb0b9683ad3e6524f0a56d1ac8a1842ef492fcd75acedf2d8351",
+      "bytes": 70325
+    },
+    {
+      "table_id": "P9",
+      "year": 2018,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2018revised/2018revisedtablep9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "7b631049d8359b0c8c58393a330b20cda2bd8fa7b3f57979c29f4c20992eb12e",
+      "bytes": 71038
+    },
+    {
+      "table_id": "P9",
+      "year": 2019,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2019revised/2019revisedtablep9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "05390a63cc1f70d562a503331f6cf861ec2cb5239385d7a97cda6008b61f4df6",
+      "bytes": 72084
+    },
+    {
+      "table_id": "P9",
+      "year": 2020,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2020revised/2020revisedtablep9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "cb1d42d1fa584d0953412473728be05f9c0b9f26f59ce130e8afb8e808016bad",
+      "bytes": 73180
+    },
+    {
+      "table_id": "P9",
+      "year": 2021,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2021provisional/2021provisionaltablep9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "1eaeb0cd29808d6526b0db32f78104f7273b7c178cf33342a837ac253e08582b",
+      "bytes": 72686
+    },
+    {
+      "table_id": "P9",
+      "year": 2024,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9/2024provisional/2024provisionalp9.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyagegroupandbypensiontypep9",
+      "sha256": "eb22e28c054aceef92887f7b12a95abb1ad0521ffc1bdba56150f0f4ec3b7e1b",
+      "bytes": 314052
+    },
+    {
+      "table_id": "P10",
+      "year": 2009,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2009/2009-table-p10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "fc2ff970b69cbd5118995870758043f77006cf31fedab544fe1a8e49c6408274",
+      "bytes": 119565
+    },
+    {
+      "table_id": "P10",
+      "year": 2010,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2010revised/2010-revised-table-p10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "43ac162e580a8cf2a0aee401cfc08fc5b9340b031fe0bfe056efb8eafc6fdb59",
+      "bytes": 129816
+    },
+    {
+      "table_id": "P10",
+      "year": 2011,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2011revisedsoc2010/2011-revised-table-p10--soc-2000-.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "1033d8eaef022e02def41ca9bcc28d434ccb90433ada12512a3f5b2283f8732a",
+      "bytes": 128122
+    },
+    {
+      "table_id": "P10",
+      "year": 2012,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2012revised/2012-revised-table-p10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "e28c7127a895adf39f2b7f443ecd9de88b3e7cb4a4dfbf1a0028fcf05a68a377",
+      "bytes": 137472
+    },
+    {
+      "table_id": "P10",
+      "year": 2013,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2013revised/2013-revised-table-p10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "a5b905c450d24317c6e73aefe604665e36c515cc0e4da83b0bee8203d848c74e",
+      "bytes": 99616
+    },
+    {
+      "table_id": "P10",
+      "year": 2014,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2014/2014revisedtablep10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "d55011cc72b75b4346bc5cbdad861decdf59f1cc0598fc3534641cb623fddd0a",
+      "bytes": 107713
+    },
+    {
+      "table_id": "P10",
+      "year": 2015,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2015/2015revisedtablep10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "f7bcae114f1ade4b1fb3fd7a00b11c32203ebb2d712e0e7949cb862304ff83cc",
+      "bytes": 108330
+    },
+    {
+      "table_id": "P10",
+      "year": 2016,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2016revised/2016revisedtablep10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "f937e7a131783e33d4bc6d2c81580f41041ac0a479029116bae030b44d704bd2",
+      "bytes": 79739
+    },
+    {
+      "table_id": "P10",
+      "year": 2017,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2017revised/2017revisedtablep10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "c1a2e20f48389cc7027a96113e9fc2ed6e7d7a4eef3648a441fdb5721968a86e",
+      "bytes": 198194
+    },
+    {
+      "table_id": "P10",
+      "year": 2018,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2018revised/2018revisedtablep10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "8c1a48ea2b09a06bff8ca72bc68a1d9e8f7f53501494f9b001381e5b7ddececb",
+      "bytes": 198634
+    },
+    {
+      "table_id": "P10",
+      "year": 2019,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2019revised/2019revisedtablep10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "f4930a62b9ed1db3cdf3d9f487c8ae372ca2ec2a9ee130ab148ed6b2d965690b",
+      "bytes": 199720
+    },
+    {
+      "table_id": "P10",
+      "year": 2020,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2020revised/2020revisedtablep10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "98fd34f5dd763f361b160a9b32e24f5c230e37c83a7d84e5436da360bd0e2def",
+      "bytes": 202254
+    },
+    {
+      "table_id": "P10",
+      "year": 2021,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2021provisional/2021provtablep10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "fe225611761f5c678ea9a0f9af7078c70044bc8aa4f55b142197b148ddf58ace",
+      "bytes": 201864
+    },
+    {
+      "table_id": "P10",
+      "year": 2024,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10/2024provisional/2024provisionalp10.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyindustryandbypensiontypep10",
+      "sha256": "1bc4baaf70a278f44d753db84148fda975572d892a13b48ef3a97f28082f3aa1",
+      "bytes": 559796
+    },
+    {
+      "table_id": "P12",
+      "year": 2009,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2009/2009-table-p12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "e595a154bb88516830521a749b46c380e52dea61bb4fd59e796ef0eb320998e1",
+      "bytes": 32771
+    },
+    {
+      "table_id": "P12",
+      "year": 2010,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2010revised/2010-revised-table-p12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "b59d647429810b76055eda2a94e31ca8c357c1018ef2f38b590d8f8dc9093f84",
+      "bytes": 36319
+    },
+    {
+      "table_id": "P12",
+      "year": 2011,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2011revisedsoc2010/2011-revised-table-p12--soc-2010-.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "62d9e85b8497b7a8718ed2555fb7b6c28dfb8ead05ea83029c3e6294a8362c94",
+      "bytes": 36522
+    },
+    {
+      "table_id": "P12",
+      "year": 2012,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2012revised/2012-revised-table-p12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "59a5bb6a7497d7765282bf2f44ae307a4b2c2cd894def71f189c68be9bbe28d1",
+      "bytes": 44199
+    },
+    {
+      "table_id": "P12",
+      "year": 2013,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2013revised/2013-revised-table-p12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "94d222a7dbb0ff019f592b176ac01784df7df6ef803e235d9be30fd2bf4f18c9",
+      "bytes": 29385
+    },
+    {
+      "table_id": "P12",
+      "year": 2014,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2014/2014revisedtablep12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "d6b70dca89b7f41a97ae753a8f5e50df87033c24072398a7bdbe86d5d0f62a77",
+      "bytes": 36200
+    },
+    {
+      "table_id": "P12",
+      "year": 2015,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2015/2015revisedtablep12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "0b1696fe63f51afc9408d18741faa503d95872a899cf3ad85997d752a885ccfc",
+      "bytes": 36979
+    },
+    {
+      "table_id": "P12",
+      "year": 2016,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2016revised/2016revisedtablep12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "b9217b9083986c82a1535befdcbcf4ce3514431adcd7964b39265f2b0f646e08",
+      "bytes": 32898
+    },
+    {
+      "table_id": "P12",
+      "year": 2017,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2017revised/2017revisedtablep12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "4bc9f2c5a814cc0249c52aa2cc1ddc9cf0431d73b1e3c9c930cc9561ecbc40dc",
+      "bytes": 57138
+    },
+    {
+      "table_id": "P12",
+      "year": 2018,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2018revised/2018revisedtablep12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "f9be97ffc9b058c0cd7e69f19f7fea41432fc0b35508cca1a5f9c12362178395",
+      "bytes": 57408
+    },
+    {
+      "table_id": "P12",
+      "year": 2019,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2019revised/2019revisedtablep12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "4f05b32264b5891fdfe02aca93209956542e4bef33c2d243f796bd74f56a56ed",
+      "bytes": 58019
+    },
+    {
+      "table_id": "P12",
+      "year": 2020,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2020revised/2020revisedtablep12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "140eb59d91728bba2348703ba9b75f4419eb6c607fc1fb6d6a6957f5f52c34cc",
+      "bytes": 59661
+    },
+    {
+      "table_id": "P12",
+      "year": 2021,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2021provisional/2021provtablep12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "11c222f9eb6d27507161392ef51dd5c72ed636b0c9850046a71d0a83038abaf9",
+      "bytes": 58702
+    },
+    {
+      "table_id": "P12",
+      "year": 2024,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12/2024provisional/2024provisionalp12.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbysizeofbusinessandbypensiontypep12",
+      "sha256": "21bb5a5b55d23762b456107255cb6a58d31043f75f0de3101c7812e65507a699",
+      "bytes": 271170
+    },
+    {
+      "table_id": "P1",
+      "year": 2009,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2009/2009-table-p1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "76f266b90ed109225fcfb913f3e5a3a022b4c08e49cb9ef5713852fcf1c1b06e",
+      "bytes": 38750
+    },
+    {
+      "table_id": "P1",
+      "year": 2010,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2010revised/2010-revised-table-p1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "7322f15dede8a1a08235c6d86720a3e874ce40989c121f4c5f2582ad8031ee33",
+      "bytes": 45425
+    },
+    {
+      "table_id": "P1",
+      "year": 2011,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2011revisedsoc2010/2011-revised-table-p1--soc-2010-.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "02e1baca73a307900d9cdc119efebb6bfc1cdbf7cc30b4371d910c68714ecb3f",
+      "bytes": 44402
+    },
+    {
+      "table_id": "P1",
+      "year": 2012,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2012revised/2012-revised-table-p1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "a04bda6885f320e0096a7f7d6bf09f6b45f839a562bf313c860ab51268b1a2e9",
+      "bytes": 52024
+    },
+    {
+      "table_id": "P1",
+      "year": 2013,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2013revised/2013-revised-table-p1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "4041f08c9775d52295e87e7cf7656889b4e70fbe75202f37e50cb0a7f1f14b2c",
+      "bytes": 37509
+    },
+    {
+      "table_id": "P1",
+      "year": 2014,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2014/2014revisedtablep1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "36404370c58d2b04dc29cb7ddadeffc93958ff6eb6e8b26c21db2d875dff9073",
+      "bytes": 44302
+    },
+    {
+      "table_id": "P1",
+      "year": 2015,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2015/2015revisedtablep1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "289fadb4de56ae9629baf2a068c2279bc7f3c4aa8266aeb472205f0598e2e2eb",
+      "bytes": 45250
+    },
+    {
+      "table_id": "P1",
+      "year": 2016,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2016revised/2016revisedtablep1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "f3830445e124b242598a5ceaee5c308f6719907922509da20a8a86ed36206975",
+      "bytes": 43111
+    },
+    {
+      "table_id": "P1",
+      "year": 2017,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2017revised/2017revisedtablep1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "1df52eb69e30b239997e91d27d6497e776241f99f2d3dad0d4a90b3d2ef9dc4f",
+      "bytes": 86475
+    },
+    {
+      "table_id": "P1",
+      "year": 2018,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2018revised/2018revisedtablep1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "a7a573b2edbaa5b349b1ae0654b169db6d68e8a998b259afe4a992a527148c40",
+      "bytes": 85987
+    },
+    {
+      "table_id": "P1",
+      "year": 2019,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2019revised/2019revisedtablep1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "e767cd759828108bc96a6558d965e31f5f25e7cd0ba62c412c367164ba22c8ff",
+      "bytes": 86093
+    },
+    {
+      "table_id": "P1",
+      "year": 2020,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2020revised/2020revisedtablep1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "8e768cc08204c9ab81ba4f1d6f541073848c90f61eda5ff3ee58b77dbff2d99e",
+      "bytes": 88132
+    },
+    {
+      "table_id": "P1",
+      "year": 2021,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2021provisional/2021provisionaltablep1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "7a466a5fd743ff46a441278a57479d3376e6f921986cc3443bb849305fce0e92",
+      "bytes": 100599
+    },
+    {
+      "table_id": "P1",
+      "year": 2024,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1/2024provisional/2024provisionalp1.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyagegroupandbygrossweeklyearningsbandsp1",
+      "sha256": "046bf6e5c0a8aef1d8e6b05d46335db9096dc79bf990b7f09632cd3aaf5c54f8",
+      "bytes": 176076
+    },
+    {
+      "table_id": "P2",
+      "year": 2011,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2011revisedsoc2010/2011-revised-table-p2--soc-2010-.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "d685951703e5cf48c9b6b0cd1c65c8316999a14c2f483c1254d3de06b76b1bea",
+      "bytes": 106586
+    },
+    {
+      "table_id": "P2",
+      "year": 2012,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2012revised/2012-revised-table-p2.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "fd6a821250a8bd5c948abed435a916d283a9583e9ae5455e4acf0d75274b3ea4",
+      "bytes": 116318
+    },
+    {
+      "table_id": "P2",
+      "year": 2013,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2013revised/2013-revised-table-p2.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "22b9b3dffccb417d5dcbca506b761e59020f69a3cf0fe57836ec1c521faa5f57",
+      "bytes": 90616
+    },
+    {
+      "table_id": "P2",
+      "year": 2014,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2014/2014revisedtablep2.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "307f98d3252fb05cad581c26a852490a66724f56acf0ed67829547f68dee367a",
+      "bytes": 98729
+    },
+    {
+      "table_id": "P2",
+      "year": 2015,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2015/2015revisedtablep2.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "635720ce3057d6e21634bc3147bc66196ac32102733b8d5d96a50b0a36f9c166",
+      "bytes": 100107
+    },
+    {
+      "table_id": "P2",
+      "year": 2016,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2016revised/2016revisedtablep2.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "ecef2c525aed75cfe72120a4b753009c490754716f7cc334b3b4fd189db89667",
+      "bytes": 92647
+    },
+    {
+      "table_id": "P2",
+      "year": 2017,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2017revised/2017revisedtablep2.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "11982d8258820625cd620c54e03a5280f31f18b69a23936bd00fc6b450cfcf23",
+      "bytes": 235794
+    },
+    {
+      "table_id": "P2",
+      "year": 2018,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2018revised/2018revisedtablep2.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "2d4eb6a1115904558cb132d5fd1830917f300cd4b461188fab0496f272b2145c",
+      "bytes": 237338
+    },
+    {
+      "table_id": "P2",
+      "year": 2019,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2019revised/2019revisedtablep2.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "2b5c48c5cfc3a8c4a78fe91e438b11e2d1c1613d55ab355bfff2a63dc4030c29",
+      "bytes": 239228
+    },
+    {
+      "table_id": "P2",
+      "year": 2020,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2020revised/2020revisedtablep2.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "8d4f70d14b40eca85d386652d5b2b2b906ac462836c693b61b714a80f79873bb",
+      "bytes": 240569
+    },
+    {
+      "table_id": "P2",
+      "year": 2021,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2021provisional/2021provisionaltablep2.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "0a9c3ca0d556605ef90506b3c697578cd8e88ac3c6a64bad3af027784c496648",
+      "bytes": 252644
+    },
+    {
+      "table_id": "P2",
+      "year": 2024,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2/2024provisional/2024provisionalp2.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebyindustryandbygrossweeklyearningsbandsp2",
+      "sha256": "c47ddacb924b23198f8e12bd0915a35ab683597ca1fee1ba5d3cb52868bb43d4",
+      "bytes": 331285
+    },
+    {
+      "table_id": "P4",
+      "year": 2009,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2009/2009-table-p4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "d439db1fb51f1f42c286065993399172a4725df0980dd09aa57287303cda909c",
+      "bytes": 31077
+    },
+    {
+      "table_id": "P4",
+      "year": 2010,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2010revised/2010-revised-table-p4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "524ad2d1e50fee26edb9059fb8c96e7066e27fdfea444fd6723187904e3a8d06",
+      "bytes": 35244
+    },
+    {
+      "table_id": "P4",
+      "year": 2011,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2011revisedsoc2010/2011-revised-table-p4--soc-2010-.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "664a4009aaa0f3d7198d92bc6295df5618115434f800264254d04e725f6a4894",
+      "bytes": 34098
+    },
+    {
+      "table_id": "P4",
+      "year": 2012,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2012revised/2012-revised-table-p4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "1e9bcef61218d11d9ee0ce50ceb448521439c3159701354f74e75f03255238ce",
+      "bytes": 43046
+    },
+    {
+      "table_id": "P4",
+      "year": 2013,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2013revised/2013-revised-table-p4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "03930e3dfa20d9a86e0aaeab36f2437b6c4409e261aa26dac533585b0e316d49",
+      "bytes": 30454
+    },
+    {
+      "table_id": "P4",
+      "year": 2014,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2014/2014revisedtablep4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "9eb5e4a3b0dcd42336064de02bd42a0865fdbca829512bf04d1fbda74b086cd7",
+      "bytes": 37382
+    },
+    {
+      "table_id": "P4",
+      "year": 2015,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2015/2015revisedtablep4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "46d464ae681dafd19f3fbbec3af88f3dd0445b04867959086ea9788d27cfadf3",
+      "bytes": 38207
+    },
+    {
+      "table_id": "P4",
+      "year": 2016,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2016revised/2016revisedtablep4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "ad0b0e8382c089992ca3682bb8be7550223771a69665ff66143099d4daae0719",
+      "bytes": 36491
+    },
+    {
+      "table_id": "P4",
+      "year": 2017,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2017revised/2017revisedtablep4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "dae5d3c841c2e6707c997dd869458c6ed12659266ea85a69dc10e999f46eb7d6",
+      "bytes": 67161
+    },
+    {
+      "table_id": "P4",
+      "year": 2018,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2018revised/2018revisedtablep4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "37935f5b40a6acd2d01c71131bf343da441c7473f2a455e7204878c46db1ceac",
+      "bytes": 67681
+    },
+    {
+      "table_id": "P4",
+      "year": 2019,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2019revised/2019revisedtablep4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "1a9389ed868ef5e5d4abb4537d3a282c8aff3b3421b1278f929066d574cb4ee1",
+      "bytes": 68680
+    },
+    {
+      "table_id": "P4",
+      "year": 2020,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2020revised/2020revisedtablep4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "2d73574d0ac3ac881efbe41a53af48a413d7d90d98517cdb1ecc95fbc4f58347",
+      "bytes": 70580
+    },
+    {
+      "table_id": "P4",
+      "year": 2021,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2021provisional/2021provisionaltablep4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "80ae2b07996fb03004abcf612b4a3fb302c19e3493e034aedeaa8a82bd55621d",
+      "bytes": 82107
+    },
+    {
+      "table_id": "P4",
+      "year": 2024,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4/2024provisional/2024provisionalp4.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablespensiontypebysizeofbusinessandbygrossweeklyearningsbandsp4",
+      "sha256": "87857bdc2fb688310579e575e13015eb162ec1753a232acc91449e1a6cbe9f0b",
+      "bytes": 147080
+    },
+    {
+      "table_id": "P11",
+      "year": 2009,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2009/2009-table-p11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "67c1bcf1b504971b20cd0d6358e6d54cb41f195c5bf1d368b4fb136b6467d9e2",
+      "bytes": 44592
+    },
+    {
+      "table_id": "P11",
+      "year": 2010,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2010revised/2010-revised-table-p11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "1cc255342ecac07d59c1f233bf3c2e0ceea3d3750cf50ad62feb192964e2d30b",
+      "bytes": 50450
+    },
+    {
+      "table_id": "P11",
+      "year": 2011,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2011revisedsoc2010/2011-revised-table-p11--soc-2010-.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "b89a5bcb1efe93e46ebaa06874ea48fed90c54e252bf3017760ffe5ddcb38411",
+      "bytes": 49205
+    },
+    {
+      "table_id": "P11",
+      "year": 2012,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2012revised/2012-revised-table-p11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "00f46388cf310ad7cfdf0514e8346a323756376ab25b63af72e6b78f0ca2aba5",
+      "bytes": 58531
+    },
+    {
+      "table_id": "P11",
+      "year": 2013,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2013revised/2013-revised-table-p11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "36fcd1fffb37dd89ef8ae53968fe9013c2a40b7559cf71b82c74186368f6cc03",
+      "bytes": 39056
+    },
+    {
+      "table_id": "P11",
+      "year": 2014,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2014/2014revisedtablep11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "7d714ae6903a8e36948f8bb50e7567e093bc57501b7470c76b573a93eed31a15",
+      "bytes": 46269
+    },
+    {
+      "table_id": "P11",
+      "year": 2015,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2015/2015revisedtablep11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "2eaf9764fa2861e030e2441bc0e228c47f0fda2c03406f6182a285c6530707f6",
+      "bytes": 46708
+    },
+    {
+      "table_id": "P11",
+      "year": 2016,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2016revised/2016revisedtablep11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "eb5964c0f38e5f93c0ad9abc9046e0159e30e108378d180cb83e29d7b9673bba",
+      "bytes": 40165
+    },
+    {
+      "table_id": "P11",
+      "year": 2017,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2017revised/2017revisedtablep11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "5b3280b8b30534c10e0b1977c365fb623f7fede3aa897a15443f2e4cd782a48d",
+      "bytes": 76651
+    },
+    {
+      "table_id": "P11",
+      "year": 2018,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2018revised/2018revisedtablep11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "d047c04b526bb9e880a2639699498098d8f3fbfe953f2c658940d4e0ba54dc81",
+      "bytes": 76679
+    },
+    {
+      "table_id": "P11",
+      "year": 2019,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2019revised/2019revisedtablep11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "8b588ad72ed9e0c45d40165031c00b2f2c1fa6d3d2d6ade9bc703d8c8ba76234",
+      "bytes": 77885
+    },
+    {
+      "table_id": "P11",
+      "year": 2020,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2020revised/2020revisedtablep11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "caf32d841614907a9c1d5613f65a7880cdc74a8fc7254ce0daf53f48fc6087e5",
+      "bytes": 79559
+    },
+    {
+      "table_id": "P11",
+      "year": 2021,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2021provisional/2021provtablep11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "8f5e245d9438c19def56ee5712c07e103a2721e95f702066ae011f3ec837be4f",
+      "bytes": 78165
+    },
+    {
+      "table_id": "P11",
+      "year": 2024,
+      "url": "https://www.ons.gov.uk/file?uri=/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11/2024provisional/2024provisionalp11.zip",
+      "source_page": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/workplacepensions/datasets/annualsurveyofhoursandearningspensiontablesemployercontributionbandsbyoccupationandbypensiontypep11",
+      "sha256": "02b9a7e23613ac893ba22418df961ca096838d86cc2a1e8bf3521b1fd76560f2",
+      "bytes": 334131
+    }
+  ]
+}

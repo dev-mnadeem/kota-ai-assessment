@@ -1,0 +1,32 @@
+services:
+  api:
+    build: .
+    ports: ["127.0.0.1:8000:8000"]
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-5.1}
+      ASHE_DB_PATH: /app/data/ashe.db
+      ASHE_SOURCE_MANIFEST: /app/sources/ons.json
+      ASHE_REFRESH_TOKEN: ${ASHE_REFRESH_TOKEN:-}
+    volumes: [ashe-data:/app/data]
+  web:
+    build:
+      context: ./ui
+      args:
+        VITE_API_BASE_URL: http://localhost:8000
+    ports: ["127.0.0.1:5173:80"]
+    depends_on: [api]
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:2.45.5
+    profiles: [automation]
+    ports: ["127.0.0.1:5678:5678"]
+    environment:
+      N8N_DIAGNOSTICS_ENABLED: 'false'
+      N8N_VERSION_NOTIFICATIONS_ENABLED: 'false'
+      N8N_TEMPLATES_ENABLED: 'false'
+      GENERIC_TIMEZONE: UTC
+    volumes: [n8n-data:/home/node/.n8n]
+    depends_on: [api]
+volumes:
+  ashe-data:
+  n8n-data:
