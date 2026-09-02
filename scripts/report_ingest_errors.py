@@ -1,17 +1,15 @@
 from __future__ import annotations
 
+import re
 import sqlite3
 from collections import defaultdict
 from pathlib import Path
 
 
 def infer_table_id_from_name(name: str) -> str:
-    lowered = name.lower()
-    for idx in range(1, 13):
-        token = f"p{idx}"
-        if token in lowered:
-            return token.upper()
-    return "UNKNOWN"
+    # Anchored so "p1" does not also claim P10-P12 files.
+    match = re.search(r"(?i)(?<![a-z0-9])p(1[0-2]|[1-9])(?![0-9])", name)
+    return f"P{match.group(1)}" if match else "UNKNOWN"
 
 
 def main() -> None:
