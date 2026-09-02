@@ -28,12 +28,32 @@ INDUSTRY_ALIASES = {
     "public administration": "Public administration and defence; compulsory social security",
 }
 
-# Small, stable data-quality constants for dimension-value resolution — not
-# agent control-flow. See README.md, "Retrieve / cache / hardcode decisions", item 2.
+# Two-letter aliases are common English words ("is it high in construction?"),
+# so they only apply when they are the whole hint.
+WHOLE_HINT_ONLY_ALIASES = {"it"}
+
+MAX_DIMENSION_VALUES = 200
+
+# Small, stable data-quality constants for dimension-value resolution; not
+# agent control-flow (see src/agent/data_access_policy.py).
 STOPWORDS = {
     "the", "and", "of", "in", "for", "to", "by", "our", "sector", "industry",
     "industries", "employees", "employee", "jobs", "company", "companies",
 }
+
+
+# The tools only ever run plain SELECTs. The authorizer is a second line of
+# defence behind mode=ro: anything else (writes, ATTACH, PRAGMA changes,
+# load_extension, VACUUM INTO) is denied before SQLite executes it.
+_ALLOWED_ACTIONS = {sqlite3.SQLITE_SELECT, sqlite3.SQLITE_READ, sqlite3.SQLITE_FUNCTION}
+_DENIED_FUNCTIONS = {"load_extension", "readfile", "writefile", "edit", "fts3_tokenizer"}
+
+
+def _read_only_authorizer(action: int, arg1: str | None, arg2: str | None, *_: object) -> int:
+    if action == sqlite3.SQLITE_FUNCTION:
+        name = (arg2 or "").lower()
+        return sqlite3.SQLITE_DENY if name in _DENIED_FUNCTIONS else sqlite3.SQLITE_OK
+    return sqlite3.SQLITE_OK if action in _ALLOWED_ACTIONS else sqlite3.SQLITE_DENY
 
 
 @dataclass
@@ -66,6 +86,7 @@ class SQLiteTools:
         try:
             conn.row_factory = sqlite3.Row
             conn.execute("PRAGMA query_only = ON")
+            conn.set_authorizer(_read_only_authorizer)
             yield conn
         finally:
             conn.close()
@@ -139,7 +160,11 @@ class SQLiteTools:
 
         if group_type == "industry":
             for alias, canonical in INDUSTRY_ALIASES.items():
-                if re.search(rf"\b{re.escape(alias)}\b", normalized_hint):
+                if alias in WHOLE_HINT_ONLY_ALIASES:
+                    content = " ".join(t for t in normalized_hint.split() if t not in STOPWORDS)
+                    if content == alias:
+                        return canonical, []
+                elif re.search(rf"\b{re.escape(alias)}\b", normalized_hint):
                     return canonical, []
 
         candidates = self._distinct_group_values(table_id, group_type, year)
@@ -325,6 +350,7 @@ class SQLiteTools:
     ) -> ToolResult:
         table_id = table_id.upper().strip()
         dim = dimension.strip().lower()
+        limit = max(1, min(int(limit), MAX_DIMENSION_VALUES))
 
         if dim == "pension_type":
             with self._connect() as conn:
@@ -336,12 +362,12 @@ class SQLiteTools:
                     ORDER BY pension_type
                     LIMIT ?
                     """,
-                    (table_id, int(limit)),
+                    (table_id, limit),
                 ).fetchall()
             values = [row["pension_type"] for row in rows]
         else:
             values = self._distinct_group_values(table_id, dim, year)
-            values = values[: int(limit)]
+            values = values[:limit]
 
         return ToolResult(
             "list_dimension_values",
@@ -588,29 +614,20 @@ class SQLiteTools:
         )
 
 
-# ---------------------------------------------------------------------------
-# LangChain tool bindings.
-#
-# Each function below wraps one SQLiteTools method as a real LangChain tool:
-# the pydantic args_schema and docstring are what the LLM sees when tools are
-# bound via `.bind_tools()`, and the return value is a plain JSON-serializable
-# dict so `ToolNode` can pack it straight into a ToolMessage. No hand-rolled
-# tool catalog or dispatch table is needed — LangChain derives the schema and
-# LangGraph's prebuilt ToolNode handles execution/dispatch natively.
-# ---------------------------------------------------------------------------
-
-_INSTANCE = SQLiteTools(os.getenv("ASHE_DB_PATH", "data/ashe.db"))
+# LangChain tool bindings. The pydantic args_schema and docstring are what the
+# model sees via `.bind_tools()`; each returns a JSON-serializable dict that
+# LangGraph's ToolNode packs into a ToolMessage.
 
 
-def _as_dict(result: ToolResult) -> dict[str, Any]:
-    return dataclasses.asdict(result)
-
-
-def _safe_call(tool_name: str, func: Any, **kwargs: Any) -> dict[str, Any]:
+def _safe_call(tool_name: str, method_name: str, **kwargs: Any) -> dict[str, Any]:
+    # The path is read per call, not at import, so a value loaded from .env
+    # after this module is imported (as the API and graph modules do) is honoured.
+    tools = SQLiteTools(os.getenv("ASHE_DB_PATH", "data/ashe.db"))
     try:
-        return _as_dict(func(**kwargs))
-    except Exception as exc:  # noqa: BLE001
-        return _as_dict(ToolResult(tool_name=tool_name, ok=False, data={}, sources=[], error=str(exc)))
+        result = getattr(tools, method_name)(**kwargs)
+    except (sqlite3.Error, OSError, ValueError) as exc:
+        result = ToolResult(tool_name=tool_name, ok=False, data={}, sources=[], error=str(exc))
+    return dataclasses.asdict(result)
 
 
 @tool("list_tables")
@@ -620,11 +637,11 @@ def list_tables_tool() -> dict[str, Any]:
     Use this before planning retrieval if you are unsure which table stores the
     metric you need, or to answer a general "what data do you have" question.
     """
-    return _safe_call("list_tables", _INSTANCE.list_tables)
+    return _safe_call("list_tables", "list_tables")
 
 
 class DescribeSchemaArgs(BaseModel):
-    table_id: str = Field(description="ASHE table id, e.g. 'P2', 'P4', 'P12'.")
+    table_id: str = Field(max_length=8, description="ASHE table id, e.g. 'P2', 'P4', 'P12'.")
 
 
 @tool("describe_schema", args_schema=DescribeSchemaArgs)
@@ -636,16 +653,16 @@ def describe_schema_tool(table_id: str) -> dict[str, Any]:
     check whether a table covers a breakdown the user asked about (such as
     gender) before claiming it is or isn't available.
     """
-    return _safe_call("describe_schema", _INSTANCE.describe_schema, table_id=table_id)
+    return _safe_call("describe_schema", "describe_schema", table_id=table_id)
 
 
 class ListDimensionValuesArgs(BaseModel):
-    table_id: str = Field(description="ASHE table id, e.g. 'P2', 'P4', 'P12'.")
+    table_id: str = Field(max_length=8, description="ASHE table id, e.g. 'P2', 'P4', 'P12'.")
     dimension: Literal["industry", "employer_size", "age", "occupation", "pension_type"] = Field(
         description="Which dimension to list canonical values for."
     )
     year: int | None = Field(default=None, description="Optional year filter.")
-    limit: int = Field(default=50, description="Maximum number of values to return.")
+    limit: int = Field(default=50, ge=1, le=MAX_DIMENSION_VALUES, description="Maximum number of values to return.")
 
 
 @tool("list_dimension_values", args_schema=ListDimensionValuesArgs)
@@ -660,7 +677,7 @@ def list_dimension_values_tool(
     """
     return _safe_call(
         "list_dimension_values",
-        _INSTANCE.list_dimension_values,
+        "list_dimension_values",
         table_id=table_id,
         dimension=dimension,
         year=year,
@@ -691,7 +708,7 @@ def lookup_industry_membership_rate_tool(
     """
     return _safe_call(
         "lookup_industry_membership_rate",
-        _INSTANCE.lookup_industry_membership_rate,
+        "lookup_industry_membership_rate",
         industry_hint=industry_hint,
         pension_family=pension_family,
         year=year,
@@ -718,7 +735,7 @@ def industry_participation_trend_tool(
     """
     return _safe_call(
         "industry_participation_trend",
-        _INSTANCE.industry_participation_trend,
+        "industry_participation_trend",
         industry_hint=industry_hint,
         since_year=since_year,
         pension_family=pension_family,
@@ -745,7 +762,7 @@ def compare_contribution_bands_by_size_tool(
     """
     return _safe_call(
         "compare_contribution_bands_by_size",
-        _INSTANCE.compare_contribution_bands_by_size,
+        "compare_contribution_bands_by_size",
         year=year,
         small_group_hint=small_group_hint,
         large_group_hint=large_group_hint,
@@ -753,7 +770,7 @@ def compare_contribution_bands_by_size_tool(
 
 
 class ExplainQualityFlagsArgs(BaseModel):
-    table_id: str = Field(description="ASHE table id, e.g. 'P2', 'P4', 'P12'.")
+    table_id: str = Field(max_length=8, description="ASHE table id, e.g. 'P2', 'P4', 'P12'.")
     year: int = Field(description="Year to check.")
     group_type: Literal["industry", "employer_size", "age", "occupation"] = Field(
         description="Which dimension the group_value_hint belongs to."
@@ -772,7 +789,7 @@ def explain_quality_flags_tool(
     """
     return _safe_call(
         "explain_quality_flags",
-        _INSTANCE.explain_quality_flags,
+        "explain_quality_flags",
         table_id=table_id,
         year=year,
         group_type=group_type,

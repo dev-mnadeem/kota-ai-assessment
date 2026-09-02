@@ -36,7 +36,7 @@ def test_fixture_is_labeled_and_tools_read_known_values(snapshot):
 def test_query_connections_cannot_write(snapshot):
     tools = SQLiteTools(snapshot)
     with tools._connect() as connection:
-        with pytest.raises(sqlite3.OperationalError):
+        with pytest.raises(sqlite3.DatabaseError):
             connection.execute('DELETE FROM observations')
     with pytest.raises(sqlite3.ProgrammingError):
         connection.execute('SELECT 1')
