@@ -8,6 +8,7 @@ services:
       ASHE_DB_PATH: /app/data/ashe.db
       ASHE_SOURCE_MANIFEST: /app/sources/ons.json
       ASHE_REFRESH_TOKEN: ${ASHE_REFRESH_TOKEN:-}
+      ASHE_CORS_ORIGINS: ${ASHE_CORS_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
     volumes: [ashe-data:/app/data]
   web:
     build:
